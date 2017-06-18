@@ -1,14 +1,20 @@
 
 task :default => [:run]
 
-task :run => [:build]
+task :run => [:clean, :build]
 
 
 task :build do
-  `cp -r ./src ./build`
+  puts "build"
+  `cp -r src/ build/`
   `docker build -t williams-project:local .`  
 end
 
 task :run do
+  puts "Site is running on localhost:80"
   `docker run -p 80:80 williams-project:local`
+end
+
+task :clean do 
+  `rm -fr build`
 end
