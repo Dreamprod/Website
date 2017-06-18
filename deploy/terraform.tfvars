@@ -1,6 +1,0 @@
-bucket_site = "we-hickox-site"
-region = "us-west-2"
-route53_domain_name = "test.wehickox.net"
-route53_domain_zoneid = "ZWGY0UQTEK5HY"
-route53_domain_alias_name = "wehickox.net"
-route53_domain_alias_zoneid = "ZWGY0UQTEK5HY"
